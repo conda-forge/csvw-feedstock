@@ -1,5 +1,5 @@
 {% set name = "csvw" %}
-{% set version = "3.5.1" %}
+{% set version = "3.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/csvw-{{ version }}.tar.gz
-  sha256: e13dfcbf56a51f66bd4c6b442b8b32b3fee4b615dcd9436149832b41572938f3
+  sha256: ae4ea6735f27bb6c20b4f5cac197f24b0130a631550c7fc0b09fd5f6a8720d4e
 
 build:
   entry_points:
@@ -27,6 +27,7 @@ requirements:
     - setuptools
     - pip
   run:
+    - termcolor
     - python >={{ python_min }}
     - attrs >=18.1
     - isodate
