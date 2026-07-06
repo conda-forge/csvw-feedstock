@@ -1,5 +1,5 @@
 {% set name = "csvw" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/csvw-{{ version }}.tar.gz
-  sha256: 060e9bedf3c274d0fce6d6f7f892a16cc8c72f39c2bc49b69b5f0858fb2f6217
+  sha256: bfe2b64442552b392577a8d30edf886510c8d05e665606fa5caa1508365fd700
 
 build:
   entry_points:
